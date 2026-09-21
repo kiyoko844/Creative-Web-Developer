@@ -325,25 +325,6 @@ a {
 	text-align: right;
 }
 
-.work-item__arrow {
-	position: absolute;
-	right: 0;
-
-	font-size: 18px;
-
-	opacity: 0;
-	transform: translate(-10px, 8px);
-
-	transition:
-		opacity 0.3s ease,
-		transform 0.3s ease;
-}
-
-.work-item:hover .work-item__arrow {
-	opacity: 1;
-	transform: translate(0, 0);
-}
-
 .work-content__footer {
 	min-height: 90px;
 
@@ -943,10 +924,6 @@ a {
 
 	.work-item__project {
 		font-size: 18px;
-	}
-
-	.work-item__arrow {
-		display: none;
 	}
 
 	.work-preview {

@@ -36,7 +36,8 @@ videos.forEach((video) => {
 	video.setAttribute("muted", "");
 	video.setAttribute("playsinline", "");
 
-	video.preload = "metadata";
+	// Загружаем видео заранее для корректной работы в Safari
+	video.preload = "auto";
 });
 
 function showVideo(video) {

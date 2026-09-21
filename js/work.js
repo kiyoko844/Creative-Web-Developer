@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			pages: "6 pages",
 			stats: ["6", "6", "2026", "HTML / CSS / JS"],
 			images: [
-				["./images/FORMA-LAB/FORMA-LAB-01.jpeg", "Home"],
+				["./images/FORMA-LAB/FORMA-LAB-01.webp", "Home"],
 				["./images/FORMA-LAB/FORMA-LAB-02.jpeg", "Our Work"],
 				["./images/FORMA-LAB/FORMA-LAB-03.webp", "Our Work"],
 				["./images/FORMA-LAB/FORMA-LAB-04.jpeg", "Process"],
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			pages: "11 pages",
 			stats: ["11", "11", "2026", "HTML / CSS / JS"],
 			images: [
-				["./images/Aurel/Aurel-01.jpeg", "Home"],
+				["./images/Aurel/Aurel-01.webp", "Home"],
 				["./images/Aurel/Aurel-02.jpeg", "Our philosophy"],
 				["./images/Aurel/Aurel-03.jpeg", "Featured fragrances"],
 				["./images/Aurel/Aurel-04.jpeg", "Collections"],
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			pages: "12 pages",
 			stats: ["12", "12", "2026", "HTML / CSS / JS"],
 			images: [
-				["./images/NORTH/North-01.jpeg", "Home"],
+				["./images/NORTH/North-01.webp", "Home"],
 				["./images/NORTH/North-02.jpeg", "Editorial"],
 				["./images/NORTH/North-03.jpeg", "Shop by mood"],
 				["./images/NORTH/North-04.jpeg", "Men"],
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			pages: "9 pages",
 			stats: ["9", "9", "2026", "HTML / CSS / JS"],
 			images: [
-				["./images/Luxury/Luxury-01.jpeg", "Home"],
+				["./images/Luxury/Luxury-01.webp", "Home"],
 				["./images/Luxury/Luxury-02.jpeg", "Our approach"],
 				["./images/Luxury/Luxury-03.jpeg", "Shop"],
 				["./images/Luxury/Luxury-04.jpeg", "Shop"],

@@ -46,17 +46,17 @@ document.addEventListener("DOMContentLoaded", () => {
 			pages: "11 pages",
 			stats: ["11", "11", "2026", "HTML / CSS / JS"],
 			images: [
-				["./images/Aurel/Aurel-01.jpeg", "Home"],
-				["./images/Aurel/Aurel-02.jpeg", "Our philosophy"],
-				["./images/Aurel/Aurel-03.jpeg", "Featured fragrances"],
-				["./images/Aurel/Aurel-04.jpeg", "Collections"],
-				["./images/Aurel/Aurel-05.jpeg", "The craft"],
-				["./images/Aurel/Aurel-06.jpeg", "Journal"],
-				["./images/Aurel/Aurel-07.jpeg", "Journal"],
-				["./images/Aurel/Aurel-08.jpeg", "Scent Finder"],
-				["./images/Aurel/Aurel-09.jpeg", "Scent Finder"],
-				["./images/Aurel/Aurel-10.jpeg", "Private notes"],
-				["./images/Aurel/Aurel-11.jpeg", "End note"],
+				["./images/AUREL/AUREL-01.jpeg", "Home"],
+				["./images/AUREL/AUREL-02.jpeg", "Our philosophy"],
+				["./images/AUREL/AUREL-03.jpeg", "Featured fragrances"],
+				["./images/AUREL/AUREL-04.jpeg", "Collections"],
+				["./images/AUREL/AUREL-05.jpeg", "The craft"],
+				["./images/AUREL/AUREL-06.jpeg", "Journal"],
+				["./images/AUREL/AUREL-07.jpeg", "Journal"],
+				["./images/AUREL/AUREL-08.jpeg", "Scent Finder"],
+				["./images/AUREL/AUREL-09.jpeg", "Scent Finder"],
+				["./images/AUREL/AUREL-10.jpeg", "Private notes"],
+				["./images/AUREL/AUREL-11.jpeg", "End note"],
 			],
 		},
 
@@ -102,6 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	];
 
 	let previousBodyOverflow = "";
+	let previouslyFocusedElement = null;
 
 	function setPreview(index) {
 		const project = projects[index];
@@ -146,6 +147,8 @@ document.addEventListener("DOMContentLoaded", () => {
 		const project = projects[index];
 
 		if (!project || !caseStudy) return;
+
+		previouslyFocusedElement = document.activeElement;
 
 		if (caseNumber) {
 			caseNumber.textContent = project.number;
@@ -207,9 +210,13 @@ document.addEventListener("DOMContentLoaded", () => {
 	function closeCaseStudy() {
 		if (!caseStudy) return;
 
+		previouslyFocusedElement?.focus();
+
 		caseStudy.classList.remove("is-open");
 		caseStudy.setAttribute("aria-hidden", "true");
 		document.body.style.overflow = previousBodyOverflow;
+
+		previouslyFocusedElement = null;
 	}
 
 	workProjects.forEach((project, index) => {

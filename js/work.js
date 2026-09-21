@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			images: [
 				["./images/FORMA-LAB/FORMA-LAB-01.jpeg", "Home"],
 				["./images/FORMA-LAB/FORMA-LAB-02.jpeg", "Our Work"],
-				["./images/FORMA-LAB/FORMA-LAB-03.jpeg", "Our Work"],
+				["./images/FORMA-LAB/FORMA-LAB-03.webp", "Our Work"],
 				["./images/FORMA-LAB/FORMA-LAB-04.jpeg", "Process"],
 				["./images/FORMA-LAB/FORMA-LAB-05.jpeg", "Manifesto"],
 				["./images/FORMA-LAB/FORMA-LAB-06.jpeg", "Contact"],

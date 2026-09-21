@@ -285,13 +285,7 @@
 	}
 
 	.hero__video {
-		position: absolute;
-		top: 220px;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		width: 100%;
-		height: auto;
+		display: none;
 	}
 
 	.hero__caption {
